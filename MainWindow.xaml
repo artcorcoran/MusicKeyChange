@@ -1,0 +1,62 @@
+﻿<!-- Copyright (c) 2016 by Art Corcoran.  All rights reserved. -->
+<Window
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:System="clr-namespace:System;assembly=mscorlib" x:Class="MusicKeyChange.MainWindow"
+        Title="Misic Key Change" Height="247.059" Width="1033.529">
+    <Grid>
+        <ComboBox x:Name="drpSourceKey" HorizontalAlignment="Left" Margin="10,36,0,0" VerticalAlignment="Top" Width="81" SelectedIndex="0" FontSize="16">
+            <System:String>C</System:String>
+            <System:String>C#</System:String>
+            <System:String>Db</System:String>
+            <System:String>D</System:String>
+            <System:String>Eb</System:String>
+            <System:String>E</System:String>
+            <System:String>F</System:String>
+            <System:String>F#</System:String>
+            <System:String>Gb</System:String>
+            <System:String>G</System:String>
+            <System:String>Ab</System:String>
+            <System:String>A</System:String>
+            <System:String>Bb</System:String>
+            <System:String>B</System:String>
+        </ComboBox>
+        <TextBlock HorizontalAlignment="Left" Margin="10,10,0,0" TextWrapping="Wrap" Text="Source Key:" VerticalAlignment="Top" FontSize="16"/>
+        <StackPanel x:Name="spSourceNotes" FlowDirection="LeftToRight" Orientation="Horizontal" HorizontalAlignment="Left" Height="85" Margin="89,1,0,0" VerticalAlignment="Top" Width="927">
+            <TextBlock x:Name="txtSrc0" HorizontalAlignment="Left" TextAlignment="Center" Margin="10,0,0,6" MinWidth="120" TextWrapping="Wrap" Text="C" VerticalAlignment="Top" FontSize="72" FontFamily="Arial Black"/>
+            <TextBlock x:Name="txtSrc1" HorizontalAlignment="Left" TextAlignment="Center" Margin="10,0,0,6" MinWidth="120" TextWrapping="Wrap" Text="D" VerticalAlignment="Top" FontSize="72" FontFamily="Arial Black"/>
+            <TextBlock x:Name="txtSrc2" HorizontalAlignment="Left" TextAlignment="Center" Margin="10,0,0,6" MinWidth="120" TextWrapping="Wrap" Text="E" VerticalAlignment="Top" FontSize="72" FontFamily="Arial Black"/>
+            <TextBlock x:Name="txtSrc3" HorizontalAlignment="Left" TextAlignment="Center" Margin="10,0,0,6" MinWidth="120" TextWrapping="Wrap" Text="F" VerticalAlignment="Top" FontSize="72" FontFamily="Arial Black"/>
+            <TextBlock x:Name="txtSrc4" HorizontalAlignment="Left" TextAlignment="Center" Margin="10,0,0,6" MinWidth="120" TextWrapping="Wrap" Text="G" VerticalAlignment="Top" FontSize="72" FontFamily="Arial Black"/>
+            <TextBlock x:Name="txtSrc5" HorizontalAlignment="Left" TextAlignment="Center" Margin="10,0,0,6" MinWidth="120" TextWrapping="Wrap" Text="A" VerticalAlignment="Top" FontSize="72" FontFamily="Arial Black"/>
+            <TextBlock x:Name="txtSrc6" HorizontalAlignment="Left" TextAlignment="Center" Margin="10,0,0,6" MinWidth="120" TextWrapping="Wrap" Text="B" VerticalAlignment="Top" FontSize="72" FontFamily="Arial Black"/>
+        </StackPanel>
+        <ComboBox x:Name="drpDestKey" HorizontalAlignment="Left" Margin="10,139,0,0" VerticalAlignment="Top" Width="81" SelectedIndex="0" FontSize="16">
+            <System:String>C</System:String>
+            <System:String>C#</System:String>
+            <System:String>Db</System:String>
+            <System:String>D</System:String>
+            <System:String>Eb</System:String>
+            <System:String>E</System:String>
+            <System:String>F</System:String>
+            <System:String>F#</System:String>
+            <System:String>Gb</System:String>
+            <System:String>G</System:String>
+            <System:String>Ab</System:String>
+            <System:String>A</System:String>
+            <System:String>Bb</System:String>
+            <System:String>B</System:String>
+        </ComboBox>
+        <TextBlock HorizontalAlignment="Left" Margin="10,113,0,0" TextWrapping="Wrap" Text="Dest. Key:" VerticalAlignment="Top" FontSize="16"/>
+        <StackPanel x:Name="spSourceNotes_Copy" FlowDirection="LeftToRight" Orientation="Horizontal" HorizontalAlignment="Left" Height="85" Margin="89,113,0,0" VerticalAlignment="Top" Width="927">
+            <TextBlock x:Name="txtDst0" HorizontalAlignment="Left" TextAlignment="Center" Margin="10,0,0,6" MinWidth="120" TextWrapping="Wrap" Text="C" VerticalAlignment="Top" FontSize="72" FontFamily="Arial Black"/>
+            <TextBlock x:Name="txtDst1" HorizontalAlignment="Left" TextAlignment="Center" Margin="10,0,0,6" MinWidth="120" TextWrapping="Wrap" Text="D" VerticalAlignment="Top" FontSize="72" FontFamily="Arial Black"/>
+            <TextBlock x:Name="txtDst2" HorizontalAlignment="Left" TextAlignment="Center" Margin="10,0,0,6" MinWidth="120" TextWrapping="Wrap" Text="E" VerticalAlignment="Top" FontSize="72" FontFamily="Arial Black"/>
+            <TextBlock x:Name="txtDst3" HorizontalAlignment="Left" TextAlignment="Center" Margin="10,0,0,6" MinWidth="120" TextWrapping="Wrap" Text="F" VerticalAlignment="Top" FontSize="72" FontFamily="Arial Black"/>
+            <TextBlock x:Name="txtDst4" HorizontalAlignment="Left" TextAlignment="Center" Margin="10,0,0,6" MinWidth="120" TextWrapping="Wrap" Text="G" VerticalAlignment="Top" FontSize="72" FontFamily="Arial Black"/>
+            <TextBlock x:Name="txtDst5" HorizontalAlignment="Left" TextAlignment="Center" Margin="10,0,0,6" MinWidth="120" TextWrapping="Wrap" Text="A" VerticalAlignment="Top" FontSize="72" FontFamily="Arial Black"/>
+            <TextBlock x:Name="txtDst6" HorizontalAlignment="Left" TextAlignment="Center" Margin="10,0,0,6" MinWidth="120" TextWrapping="Wrap" Text="B" VerticalAlignment="Top" FontSize="72" FontFamily="Arial Black"/>
+        </StackPanel>
+
+    </Grid>
+</Window>
